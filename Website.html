@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Store</title>
+  <link rel="stylesheet" href="Website.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Toy Store</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#toys">Toys</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <button onclick="openCart()">Cart (0)</button>
+    </div>
+  </header>
+
+  <section id="toys">
+    <h2>Featured Toys</h2>
+    <div class="toys-container">
+      <div class="toy-item">
+        <img src="Photos/Toys 1.jfif" alt="Toy Car">
+        <h3>Toy Car</h3>
+        <p>$10</p>
+        <button onclick="addToCart(10)">Add to Cart</button>
+      </div>
+      <div class="toy-item">
+        <img src="Photos/Toys 3.jfif" alt="Toy Robot">
+        <h3>Toy Robot</h3>
+        <p>$20</p>
+        <button onclick="addToCart(20)">Add to Cart</button>
+      </div>
+    <div class="toy-item">
+        <img src="Photos/Toys 4.jfif" alt="Toy Doll">
+        <h3>Toy Deddy </h3>
+        <p>$12</p>
+        <button onclick="addToCart(12)">Add to Cart</button>
+      </div>
+    </section>
+    <section id="toys">
+        <h2>Featured Toys</h2>
+        <div class="toys-container">
+          <div class="toy-item">
+            <img src="Photos/Toys 10.jfif" alt="Toy Car">
+            <h3>Toy Train</h3>
+            <p>$10</p>
+            <button onclick="addToCart(10)">Add to Cart</button>
+          </div>
+          <div class="toy-item">
+            <img src="Photos/Bike toys.jfif" alt="Toy Robot">
+            <h3>Toy Bike</h3>
+            <p>$20</p>
+            <button onclick="addToCart(20)">Add to Cart</button>
+          </div>
+        <div class="toy-item">
+            <img src="Photos/Toys 8.jfif" alt="Toy Doll">
+            <h3>Baby Toys</h3>
+            <p>$12</p>
+            <button onclick="addToCart(12)">Add to Cart</button>
+          </div>
+        </section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot">
+    <div class="chatbox">
+      <div class="chatbox-messages" id="chatbox-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to <strong>Toy Store</strong>! We are passionate about bringing joy to children through high-quality, safe, and educational toys.</p>
+        <p></p>Our mission is to inspire creativity and imagination in children of all ages with toys that are both fun and developmentally enriching.
+    <p>Thank you for choosing <strong>Toy Store</strong>. Let’s create happy memories, one toy at a time!</p>
+  
+    </section></br>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>78 Kannan Bazar Near 2nd Feet Karaikudi 630001 </p>
+        <p>Phonenumber:7708625120</p>
+        <p>Gmail: hariprabu1734@gmail.com</p>
+    </section></br>
+
+  <footer>
+    <p>&copy; 2024 Toy Store. All rights reserved.</p>
+  </footer>
+
+  <script src="Website.js"></script>
+</body>
+</html>
